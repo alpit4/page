@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'Raiderfont';
+  src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style: flex;
+}
+
+.left,
+.right {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  z-index: -1;
+}
+
+.left {
+  background: #e89c5e;
+  left: 0%;
+  width: 100%;
+}
+
+.right {
+  background:#cf7e31;
+  right: 0%;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  padding: 30px;
+}
+
+.nav ul li {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-weight: 1000;
+  padding: 0 30px;
+}
+
+.nav .logo {
+  flex: 1;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.nav .collection {
+  flex: 1;
+  padding-left: 100px;
+}
+
+.nav .explore {
+  flex: 1;
+}
+
+.nav .profile {
+  flex: 0;
+}
+
+.nav .profile .img {
+  background-image: url('profile.jpg');
+  background-position: 100%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.img-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+
+.img-wrapper .karina {
+  background-image: url('product2.jpg');
+  background-size: cover;
+  height: 500px;
+  width: 0;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  background: rgba(0, 0, 0, .8);
+  padding: 0 10px;
+}
+
+.info ul li {
+  display: inline-block;
+  padding: 20px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.info i {
+  font-size: 18px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+.text h1 {
+  font-size: 90px;
+  color: #fff;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 20px;
+  color: #fff;
+  font-family: monospace;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+  font-size: 90px;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffffc2;
+}
+
+.points{
+  color: #fff;
+  height: 100px;
+  text-transform: uppercase;
+  margin-top: 15px;
+ 
+}
+.bottom {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.bottom ul li {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-top: 15px;
+}
+
+.bottom ul li:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 50px;
+  margin: 0 10px 0 -70px;
+  transform: translateY(-3px);
+}
